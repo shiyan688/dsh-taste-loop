@@ -1,0 +1,9 @@
+# dsh-taste-loop bundle patch layer.
+# `dsh plugin add` 安装时作为一层应用：把插件行插进 web profile 的组合配置。
+#
+# 插件提供：口味闭环工作台（侧栏入口 + 全屏浮层）。
+#   你给场景（训练材料）→ 模型照场景写候选 → 你点赞/踩 → 提炼成写作规律
+#   → 规律写进 <根>/.dsh-taste/profile.md → 下一轮生成带着它写。
+- insert:
+    - id: dsh-taste-loop
+      name: 'dsh-taste-loop'
